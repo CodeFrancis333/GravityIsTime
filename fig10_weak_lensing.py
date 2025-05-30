@@ -11,7 +11,7 @@ kappa_tau = kappa_0 * (ell / ell_pivot)**(-alpha)
 
 for ell_test in [100, 300, 1000]:
     idx = np.abs(ell - ell_test).argmin()
-    print(f"κ_τ(ℓ={ell_test:4.0f}) = {kappa_tau[idx]:.4f}")
+    print(f"k_tau(l={ell_test:4.0f}) = {kappa_tau[idx]:.4f}")
 
 plt.figure(figsize=(6,4))
 plt.loglog(ell, kappa_tau, lw=2, color="C0", label=r"$\kappa_{\tau}(\ell)$")

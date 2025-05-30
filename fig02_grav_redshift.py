@@ -6,7 +6,7 @@ c       = 2.99792458e8         # m s^-1
 M_sun   = 1.98847e30           # kg
 
 M_BH    = 1e9 * M_sun          # 10^9 solar masses
-r_s     = 2 * G * M_BH / c**2  # Schwarzschild radius  (metres)
+r_s     = 2 * G * M_BH / c**2  # Schwarzschild radius 
 
 print(f"Schwarzschild radius r_s = {r_s/1e3:.2f} km")
 

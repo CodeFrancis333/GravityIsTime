@@ -3,8 +3,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 h      = 0.7
-Omega_r0 = 4.2e-5 / h**2         # ≈ 8.6 × 10⁻⁵
-# fiducial ΛCDM
+Omega_r0 = 4.2e-5 / h**2         # = 8.6 x 1e-5
+# fiducial LCDM
 Om_m_LCDM = 0.31
 Om_Lam    = 0.69
 # scalar-time best-fit
@@ -25,7 +25,7 @@ E_st   = E_scalar(z)
 mask      = (z >= 2) & (z <= 1100)
 frac_diff = (E_st[mask] - E_lcdm[mask]) / E_lcdm[mask]
 max_dev   = np.max(np.abs(frac_diff)) * 100   # %
-print(f"Max |ΔE/E| over 2<z<1100  = {max_dev:.2f} %")
+print(f"Max |Delta_E/E| over 2<z<1100  = {max_dev:.2f} %")
 
 plt.figure(figsize=(6,4))
 

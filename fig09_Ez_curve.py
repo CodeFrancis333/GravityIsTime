@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 h          = 0.7
 Omega_r0   = 4.2e-5 / h**2        # photons + neutrinos 
 
-# Fiducial ΛCDM
+# Fiducial LCDM
 Om_m_LCDM  = 0.31
 Om_Lam     = 0.69
 
@@ -30,13 +30,13 @@ E_ST_vals   = E_scalar(z)
 
 frac_diff = (E_ST_vals - E_LCDM_vals) / E_LCDM_vals
 max_dev   = np.max(np.abs(frac_diff))*100
-print(f"Max |ΔE/E| over 0.01<z<10  = {max_dev:.2f} %")
+print(f"Max |Delta_E/E| over 0.01<z<10  = {max_dev:.2f} %")
 
 for z_test in [0.1, 1, 3]:
     idx = np.abs(z - z_test).argmin()
     print(f"z={z_test:<3}  :  E_ST = {E_ST_vals[idx]:.3f}, "
           f"E_LCDM = {E_LCDM_vals[idx]:.3f},  "
-          f"Δ = {frac_diff[idx]*100:+.2f} %")
+          f"Delta = {frac_diff[idx]*100:+.2f} %")
 
 plt.figure(figsize=(6,4))
 plt.loglog(z, E_LCDM_vals, lw=2, color="gray", label=r"$\Lambda$CDM")
