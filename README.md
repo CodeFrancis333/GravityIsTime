@@ -1,5 +1,6 @@
 
 README  —  Gravity Is Time
+(view main.pdf for full content)
 ===============================================================
 
 Author :  E. F. G. Herrera <br>
