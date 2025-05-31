@@ -1,0 +1,127 @@
+\documentclass[12pt,oneside]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{tocbibind}
+\usepackage{physics}
+\usepackage{csquotes}
+\usepackage{siunitx}
+\usepackage{booktabs}
+\geometry{letterpaper,margin=1in}
+\onehalfspacing
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest} 
+\usetikzlibrary{calc}
+\usetikzlibrary{pgfplots.fillbetween}
+\usepackage{tabularx}
+\usepackage[backend=biber,style=numeric]{biblatex}
+\addbibresource{references.bib}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{physics}
+
+
+\title{Gravity as Time: \\
+{A Scalar-Field Framework for Gravitation and Quantum Evolution}}
+\author{E.F.G. Herrera}
+\date{May 2025}
+
+\newenvironment{dedication}{\clearpage\thispagestyle{empty}\vspace*{4cm}\begin{flushright}\itshape}{\end{flushright}\vfill\clearpage}
+
+
+\begin{document}
+\frontmatter
+
+\begin{titlepage}
+  \centering
+  {\LARGE Gravity as Time\\[0.5em] \Large A Scalar‑Field Framework for Gravitation and Quantum Evolution\par}
+  \vspace{3cm}
+  {\large © 2025 E. F. G. Herrera\\Valenzuela, Philippines\\\texttt{codeherrera333@gmail.com}\par}
+  \vfill
+  First edition, May 2025
+\end{titlepage}
+
+\thispagestyle{empty}
+\noindent
+All rights reserved. No part of this publication may be reproduced, stored in a retrieval system, or transmitted in any form or by any means—electronic, mechanical, photocopying, recording, or otherwise—without the prior written permission of the author, except for brief quotations used in critical articles or reviews.
+\vfill
+\clearpage
+
+\begin{dedication}
+To all who find new rhythms in the ticking of the Universe.
+\end{dedication}
+
+\chapter*{Preface}
+I wrote this paper out of pure curiosity. It was not for school, a job or anyone else's expectations, just a quiet pursuit of something that genuinely fascinated me. Along the way, I found myself drawing inspiration from the minds of Leonardo da Vinci, Albert Einstein, and the wisdom of Tao Te Ching. Their ways of thinking helped me unlock a creative space that felt natural, unforced, and deeply personal. \\
+\\
+Da Vinci, for example, didn’t rush his work. Some of his paintings remained unfinished not because of laziness, but because he refused to force creativity. Leonardo da Vinci could watch ripples in a pond for an hour and call it a good day’s work. He followed his natural curiosity instead of rigid plans, letting ideas unfold through careful observation of nature. Einstein, on the other hand, played with ideas through vivid thought experiments. He trusted his intuition deeply. One of his quotes stayed with me throughout this journey:\\
+
+\begin{displayquote}
+\itshape
+"Imagination is more important than knowledge. 
+For knowledge is limited to all we now know and understand,
+while imagination embraces the entire world, and all there ever will be to know and understand."
+\end{displayquote}
+
+\hfill—\, Albert Einstein \\
+\\
+These ideas resonated with something I found in the \emph{Tao Te Ching}, especially the concept of \emph{wu wei} acting without force, flowing with the nature of things. It’s not about being idle or lazy, but about moving through life in a way that feels aligned, intuitive, and honest. That spoke to me. \\
+\\
+Today’s world often praises relentless productivity, linear careers, and constant “hustle.” But I don’t feel like I belong to that mold. I don’t enjoy the idea of a job just for security’s sake. In fact, I wrote this paper in secret. My parents want me to have a stable job, so I pretend to do something that sounds like work just so they won’t worry. But deep down, I crave a simpler life. One where I can be myself. One where I’m not following someone else’s path.\\
+\\
+This paper may not be perfect but it is a reflection of a small act of curiosity, honesty, and creative freedom.
+
+\include{Abstract}
+
+
+\tableofcontents
+\clearpage
+\listoffigures  
+\clearpage
+
+\mainmatter
+
+\include{Introduction}
+\include{Chapter1}
+\include{Chapter2}
+\include{Chapter3}
+\include{Chapter4}
+\include{Chapter5}
+\include{Chapter6}
+
+\include{Conclusion}
+\include{Glossary}
+
+\appendix
+
+\include{Appendix_A}
+\include{Appendix_B}
+\include{Appendix_C}
+\include{Appendix_D}
+\include{Appendix_E}
+
+\lstdefinestyle{pyStyle}{
+     basicstyle=\ttfamily\small,
+     keywordstyle=\color{blue!70!black}\bfseries,
+     commentstyle=\itshape\color{green!50!black},
+     stringstyle=\color{orange!70!black},
+     numbers=left,
+     numberstyle=\tiny,
+     stepnumber=1,
+     numbersep=8pt,
+     frame=single,
+     breaklines=true,
+     tabsize=4,
+     captionpos=b
+}
+
+  
+\include{Appendix_F}
+
+\end{document}

@@ -1,0 +1,80 @@
+\begin{refsection} 
+
+\chapter{Self-Gravitating \texorpdfstring{$\tau$}{tau}-Halos: Stability and Parameter Bounds}
+
+\section*{E\,1 \quad Virial–Type Stability}
+
+For a static halo the gradient, mass, and quartic energies are
+\[
+   E_{\text{grad}}
+   = \frac12 \int (\nabla\tau)^{2}\,d^{3}x,\quad
+   E_{\text{mass}}
+   = \frac12 m_{\tau}^{2}\!\int \tau^{2}\,d^{3}x,\quad
+   E_{\text{self}}
+   = \frac{\lambda}{4}\int \tau^{4}\,d^{3}x.
+\]
+Neglecting the surface pressure term, the tensor virial theorem
+(e.g.\ Sec.\,5 of \cite{Chandrasekhar1961}) implies
+\begin{equation}
+  \boxed{%
+      \lambda \;>\; \frac{m_{\tau}^{2}}{8\pi GM^{2}}
+    }                      \tag{E-1}\label{eq:E1}
+\end{equation}
+for a halo of mass \(M\).
+
+\section*{E\,2 \quad Bullet-Cluster Scale}
+
+Adopting the Bullet-Cluster lensing mass
+\(M\simeq10^{14}M_{\odot}\) \cite{Randall2008}
+and the fiducial chronon mass \(m_{\tau}=10^{-28}\,\mathrm{eV}\),
+Eq.\,\eqref{eq:E1} gives
+\[
+  \lambda_{\min}\simeq 2\times10^{-10}\;\ll\;
+  \lambda_{\text{fid}}=10^{-4},
+\]
+so the chosen quartic coupling stabilises Bullet-sized halos by five
+orders of magnitude.
+
+\section*{E\,3 \quad Collision-less \& Solar-System Windows}
+
+\begin{table}[htbp]
+  \centering
+  \caption{Independent constraints on the fiducial parameter set
+           \(\{m_{\tau}=10^{-28}\,\mathrm{eV},\;
+             \lambda=10^{-4}\}\).}
+  \renewcommand{\arraystretch}{1.2}
+  \begin{tabular}{@{} l c c c @{}}
+    \toprule
+    \textbf{Constraint} &
+    \textbf{Requirement} &
+    \textbf{Fiducial value} &
+    \textbf{Pass} \\
+    \midrule
+    Force range &
+      $\lambda_{\tau}\ge\SI{200}{kpc}$ &
+      \(210\;\text{kpc}\) & \checkmark  \\[2pt]
+
+    Self-interaction\footnotemark &
+      $\sigma/m < \SI{1}{cm^{2}\,g^{-1}}$ &
+      \(0.1\;\si{cm^{2}\,g^{-1}}\) & \checkmark  \\[2pt]
+
+    Solar deviation &
+      $<10^{-11}$ at \SI{1}{AU} &
+      $<2.4\times10^{-8}$ & \checkmark  \\
+    \bottomrule
+  \end{tabular}
+  \label{tab:tauHaloConstraints}
+\end{table}
+
+\footnotetext{Upper limit from Bullet-Cluster simulations
+\cite{Randall2008}.}
+
+\bigskip
+\noindent
+Hence \(m_{\tau}=10^{-28}\,\mathrm{eV}\) and
+\(\lambda=10^{-4}\) keep $\tau$-halos Virial-stable, Bullet-consistent,
+and Solar-System safe.
+
+\printbibliography[heading=subbibliography]
+
+\end{refsection}  

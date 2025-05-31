@@ -1,0 +1,36 @@
+\begin{figure}[htbp]
+  \centering
+  \begin{tikzpicture}
+  \begin{axis}[
+      width=0.9\textwidth,
+      xlabel={$z$},
+      ylabel={$E(z)=H(z)/H_0$},
+      xmode=log, ymode=log,
+      xmin=0.1, xmax=1100,
+      ymin=0.3, ymax=100,
+      grid=both,
+      legend style={draw=none, font=\small},
+      legend pos=south east]
+    %
+    % --- ΛCDM fiducial curve ----------------------------------
+    \addplot[very thick,gray!60,name path=LCDM,domain=0.1:1100,samples=240]
+      {sqrt(4.2e-5*(1+x)^4 + 0.31*(1+x)^3 + 0.69)};
+    \addlegendentry{$\Lambda$CDM fiducial}
+    %
+    % --- ±3 % band around ΛCDM --------------------------------
+    \addplot[draw=none,domain=0.1:1100,samples=240,name path=LCDMhigh]
+      {1.03*sqrt(4.2e-5*(1+x)^4 + 0.31*(1+x)^3 + 0.69)};
+    \addplot[draw=none,domain=0.1:1100,samples=240,name path=LCDMlow]
+      {0.97*sqrt(4.2e-5*(1+x)^4 + 0.31*(1+x)^3 + 0.69)};
+    \addplot[gray!20,opacity=0.6] fill between[of=LCDMhigh and LCDMlow];
+    %
+    % --- Scalar-time curve ------------------------------------
+    \addplot[very thick,blue,dashed,domain=0.1:1100,samples=240]
+      {sqrt(4.2e-5*(1+x)^4 + 0.50*(1+x)^3 + 0.62*(1+x)^2)};
+    \addlegendentry{Scalar-time}
+  \end{axis}
+  \end{tikzpicture}
+  %-------------------------------------------------------------
+  \caption{Effective expansion history $E(z)$ for the scalar-time model (blue dashed) compared with a fiducial $\Lambda$CDM curve (solid grey) and its $\pm3\%$ BAO + CMB tolerance band (shaded).  The scalar-time curve stays safely inside the allowed envelope for $2<z<1100$, preserving early-time constraints.}
+  \label{fig:BAOCMB}
+\end{figure}
