@@ -101,4 +101,5 @@ If you spot an error or have questions, please open an issue at
 https://github.com/CodeFrancis333/GravityIsTime.git or email directly.
 
 Also if you wanted to be part of this paper, I'm looking for help for the full Boltzmann Run (CMB peaks) <br>
-Using: Cosmic Linear Anisotropy Solving System (https://github.com/lesgourg/class_public.git)
+Using: Cosmic Linear Anisotropy Solving System (https://github.com/lesgourg/class_public.git) <br>
+PDF: https://drive.google.com/file/d/1ziAqBx04sToo32rQTQVL0ew7K8rfAWfV/view?usp=sharing
